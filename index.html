@@ -215,7 +215,19 @@ a{text-decoration:none;color:inherit}
 .dashboard-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.dashboard-heading h3{margin:0;font-size:18px}.dashboard-heading p{margin:3px 0 0;font-size:11px;color:#6f7780}
 .library-actions{display:flex;gap:8px;align-items:center}.search-box{height:36px;display:flex;align-items:center;gap:7px;border:1px solid #cbd3dc;background:#fff;border-radius:6px;padding:0 10px;min-width:230px}.search-box span{font-size:18px;color:#657180}.search-box input{border:0;outline:0;width:100%;font-size:12px;background:transparent;color:#202124}.filter-select{height:36px;border:1px solid #cbd3dc;border-radius:6px;background:#fff;padding:0 10px;font-size:12px;color:#2e3742}
 .quick-features{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.quick-feature{display:flex;align-items:center;gap:9px;border:1px solid #e0e5eb;background:#f8fafc;padding:9px 10px;border-radius:6px}.qf-icon{width:28px;height:28px;border-radius:5px;background:#eaf2ff;color:#0b5ed7;display:grid;place-items:center;font-size:15px;font-weight:700}.quick-feature b{display:block;font-size:12px}.quick-feature small{display:block;color:#717985;font-size:10px;margin-top:2px}
-.mock-card{transition:transform .12s,box-shadow .12s,border-color .12s}.mock-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(20,52,84,.12);border-color:#b9c7d7}.mock-card .status-chip{display:inline-flex;align-items:center;width:max-content;padding:3px 7px;border-radius:10px;background:#eef7ee;color:#137a27;font-size:9px;font-weight:700;margin-bottom:7px}.mock-card .status-chip.new{background:#f2f4f7;color:#66707c}.mock-progress{height:4px;background:#e9edf1;border-radius:4px;overflow:hidden;margin:-4px 0 11px}.mock-progress span{display:block;height:100%;background:#0b5ed7}.mock-score{font-size:11px;color:#5f6770;margin-top:-5px;margin-bottom:10px}.no-mocks{border:1px dashed #cfd5db;padding:28px;text-align:center;color:#707781;background:#fff;font-size:13px}.portal-info-card{border:1px solid #cfd8e1;background:#fff;padding:14px;margin-top:14px}.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.info-grid div{padding:9px 11px;border:1px solid #e1e6eb;background:#f8fafc}.info-grid b{display:block;color:#0b5ed7;font-size:12px;margin-bottom:2px}.info-grid span{font-size:11px;color:#626b75}.info-rules{border-top:1px solid #e0e5ea;margin-top:10px;padding-top:10px;font-size:11px;color:#626b75}
+.mock-card{transition:transform .12s,box-shadow .12s,border-color .12s}.mock-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(20,52,84,.12);border-color:#b9c7d7}.mock-card .status-chip{display:inline-flex;align-items:center;width:max-content;padding:3px 7px;border-radius:10px;background:#eef7ee;color:#137a27;font-size:9px;font-weight:700;margin-bottom:7px}.mock-card .status-chip.new{background:#f2f4f7;color:#66707c}.mock-progress{height:4px;background:#e9edf1;border-radius:4px;overflow:hidden;margin:-4px 0 11px}.mock-progress span{display:block;height:100%;background:#0b5ed7}.mock-score{font-size:11px;color:#5f6770;margin-top:-5px;margin-bottom:10px}
+.result-mini{border:1px solid #d8e1ea;background:#f7faff;padding:8px 9px;margin:-2px 0 10px;border-radius:5px}
+.result-mini .rm-top{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:10px;color:#66707b}
+.result-mini .rm-score{font-size:19px;font-weight:800;color:#0b5ed7;line-height:1.05}
+.result-mini .rm-row{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:7px}
+.result-mini .rm-row span{display:block;text-align:center;background:#fff;border:1px solid #e1e6eb;padding:4px 2px;font-size:9px;color:#6b7280}
+.result-mini .rm-row b{display:block;color:#202124;font-size:11px}
+.mock-card .mock-actions{flex-wrap:wrap}
+.mock-card .mock-actions .result-btn{flex:1 1 auto}
+.result-actions .btn.review-link{background:#0b5ed7;color:#fff;border-color:#0b5ed7}
+.review-mode #back-result-btn{display:inline-flex!important}
+@media(max-width:650px){.result-mini .rm-score{font-size:17px}.result-mini .rm-row{gap:3px}}
+.no-mocks{border:1px dashed #cfd5db;padding:28px;text-align:center;color:#707781;background:#fff;font-size:13px}.portal-info-card{border:1px solid #cfd8e1;background:#fff;padding:14px;margin-top:14px}.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.info-grid div{padding:9px 11px;border:1px solid #e1e6eb;background:#f8fafc}.info-grid b{display:block;color:#0b5ed7;font-size:12px;margin-bottom:2px}.info-grid span{font-size:11px;color:#626b75}.info-rules{border-top:1px solid #e0e5ea;margin-top:10px;padding-top:10px;font-size:11px;color:#626b75}
 
 /* ===== LONG-QUESTION SCROLLING ===== */
 .question-pane{overflow:hidden!important}.question-body{overflow-y:auto!important;overflow-x:hidden!important;scrollbar-width:thin;scrollbar-color:#b8c1cc #f5f7f9}.question-body::-webkit-scrollbar{width:9px}.question-body::-webkit-scrollbar-track{background:#f5f7f9}.question-body::-webkit-scrollbar-thumb{background:#b8c1cc;border-radius:8px;border:2px solid #f5f7f9}.question-body::-webkit-scrollbar-thumb:hover{background:#8e99a6}
@@ -298,12 +310,38 @@ a{text-decoration:none;color:inherit}
 
 
 /* ===== FINAL LONG-QUESTION SCROLL OVERRIDE ===== */
-.question-body{display:block!important;flex:none!important;min-height:0!important;height:100%!important;overflow-y:auto!important;overflow-x:hidden!important;padding-bottom:24px!important}.question-text{display:block!important;flex:none!important;overflow:visible!important}.options{display:block!important;flex:none!important;overflow:visible!important}.bottom-bar{flex:none!important}
+.question-body{display:block!important;flex:none!important;min-height:0!important;height:100%!important;overflow-y:auto!important;overflow-x:hidden!important;padding-bottom:64px!important}.question-text{display:block!important;flex:none!important;overflow:visible!important}.options{display:block!important;flex:none!important;overflow:visible!important}.bottom-bar{flex:none!important}
 .question-body{overflow-y:auto!important;overflow-x:hidden!important;scrollbar-width:thin;scrollbar-color:#aeb8c4 #f3f5f7!important;overscroll-behavior:contain!important;-webkit-overflow-scrolling:touch!important}
 .question-body::-webkit-scrollbar{width:9px}.question-body::-webkit-scrollbar-track{background:#f3f5f7}.question-body::-webkit-scrollbar-thumb{background:#aeb8c4;border-radius:8px;border:2px solid #f3f5f7}.question-body::-webkit-scrollbar-thumb:hover{background:#8d98a5}
 .question-body .question-text,.question-body .options{overflow:visible!important}
 .question-text table{display:table!important;overflow:visible!important;max-width:100%!important}
-@media(max-width:650px){.question-body{overflow-y:auto!important}.question-body::-webkit-scrollbar{width:7px}}
+@media(max-width:650px){.question-body{overflow-y:auto!important;padding-bottom:54px!important}.question-body::-webkit-scrollbar{width:7px}}
+
+/* ===== ERROR RETRY / LEARNING LOOP ===== */
+.error-retry-panel{margin:18px 0 0;border:1px solid #d3dbe4;background:#fbfcfe;padding:15px 16px}
+.error-retry-panel h3{margin:0;font-size:17px;color:#1f3044}
+.error-retry-panel .subline{margin:4px 0 12px;color:#6b7480;font-size:11px}
+.error-retry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.error-retry-card{border:1px solid #d8e0e8;background:#fff;padding:10px;border-radius:6px}
+.error-retry-card .erc-head{display:flex;justify-content:space-between;align-items:center;gap:5px}
+.error-retry-card .erc-part{font-weight:800;font-size:12px;color:#0b5ed7}
+.error-retry-card .erc-errors{font-size:11px;color:#5e6873}
+.error-retry-card .erc-score{font-size:18px;font-weight:800;margin-top:7px;color:#202124}
+.error-retry-card .erc-meta{font-size:9px;color:#707984;margin-top:2px;line-height:1.35}
+.error-retry-card .erc-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}
+.error-retry-card button{height:28px;border:1px solid #b8c4d0;border-radius:5px;background:#fff;color:#243447;font-size:10px;font-weight:700;padding:0 8px}
+.error-retry-card button.primary{background:#0b5ed7;border-color:#0b5ed7;color:#fff}
+.error-retry-card button:disabled{opacity:.45;cursor:not-allowed}
+.mock-error-quick{margin:-3px 0 10px;padding:6px 7px;border:1px solid #e0e5ea;background:#fbfcfd;border-radius:5px}
+.mock-error-quick .meq-label{font-size:9px;font-weight:800;color:#68727d;margin-bottom:4px}
+.mock-error-quick .meq-btns{display:flex;gap:4px;flex-wrap:wrap}
+.mock-error-quick button{border:1px solid #c6cfd8;border-radius:4px;background:#fff;padding:4px 7px;font-size:9px;font-weight:800;color:#334155}
+.mock-error-quick button.active{border-color:#0b5ed7;color:#0b5ed7;background:#eef5ff}
+.error-mode-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 7px;border-radius:10px;background:#fff3cd;color:#7a5a00;font-size:9px;font-weight:800;margin-left:6px}
+.error-mode-note{margin:0 0 8px;padding:6px 8px;border-left:3px solid #e7a21a;background:#fffaf0;color:#6b5a2e;font-size:10px}
+@media(max-width:900px){.error-retry-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.error-retry-grid{grid-template-columns:1fr}.error-retry-card .erc-actions button{flex:1 1 auto}}
+
 </style>
 </head>
 <body>
@@ -384,6 +422,7 @@ a{text-decoration:none;color:inherit}
     <button class="action-btn secondary" onclick="toggleReview()">Mark for Review</button>
     <button class="action-btn" onclick="saveAndNext()">Save &amp; Next</button>
     <button class="action-btn" onclick="submitSection()">Submit Section</button>
+    <button class="action-btn hidden" id="back-result-btn" onclick="backToResultFromReview()">Back to Result</button>
     <button class="action-btn" onclick="confirmSubmitTest()">Submit Test</button>
   </div>
 
@@ -451,7 +490,7 @@ a{text-decoration:none;color:inherit}
   <div class="result-card">
     <div class="result-top">
       <div style="display:flex;justify-content:space-between;gap:20px;align-items:flex-end;flex-wrap:wrap">
-        <div><h2 id="result-title">SSC CGL MOCK</h2><div style="color:#6b7280">Section-wise performance report</div></div>
+        <div><h2 id="result-title">SSC CGL MOCK</h2><div style="color:#6b7280">Section-wise performance report · saved to this mock dashboard</div></div>
         <div><div class="score-big" id="total-score">0</div><div style="color:#6b7280;font-size:12px">Total Marks</div></div>
       </div>
       <div class="summary-grid">
@@ -535,9 +574,6 @@ function togglePortalInfo(){document.getElementById('portal-info').classList.tog
 function getStoredMockState(i){
   try{return JSON.parse(localStorage.getItem('sscCglMockState_'+i)||'null')}catch(e){return null}
 }
-function getStoredMockState(i){
-  try{return JSON.parse(localStorage.getItem('sscCglMockState_'+i)||'null')}catch(e){return null}
-}
 function renderPortal(){
   let completed=0,totalAttempts=0,best=0;
   MOCKS.forEach((m,i)=>{
@@ -558,15 +594,28 @@ function filterMocks(){
   const grid=document.getElementById('mock-grid'); grid.innerHTML='';
   let shown=0;
   MOCKS.forEach((m,i)=>{
-    const d=getStoredMockState(i); const completed=!!d?.lastResult?.submitted;
+    const d=getStoredMockState(i);
+    const completed=!!d?.lastResult?.submitted;
     const attemptCount=Number(d?.attemptCount)||0;
     const bestScore=Number(d?.bestScore)||Number(d?.lastResult?.total)||0;
+    const lastScore=Number(d?.lastResult?.total)||0;
+    const accuracy=String(d?.lastResult?.accuracy ?? 0)+'%';
+    const correct=Number(d?.lastResult?.c ?? 0);
+    const wrong=Number(d?.lastResult?.w ?? 0);
+    const unattempted=Number(d?.lastResult?.u ?? 100);
     const label=('mock '+String(i+1).padStart(2,'0')+' '+m.name).toLowerCase();
     if(query && !label.includes(query)) return;
     if(filter==='done'&&!completed) return;
     if(filter==='new'&&completed) return;
     shown++;
     const card=document.createElement('article'); card.className='mock-card';
+    const resultBlock=completed?`<div class="result-mini">
+        <div class="rm-top"><span>LAST RESULT</span><span>${attemptCount} attempt${attemptCount===1?'':'s'} · Best ${bestScore.toFixed(2)}</span></div>
+        <div class="rm-score">${lastScore.toFixed(2)} <span style="font-size:10px;color:#6b7280;font-weight:600">/ 200</span></div>
+        <div class="rm-row">
+          <span><b>${correct}</b>Correct</span><span><b>${wrong}</b>Wrong</span><span><b>${accuracy}</b>Accuracy</span>
+        </div>
+      </div>`:'<div class="mock-score">Fresh sectional attempt · 4 parts</div>';
     card.innerHTML=`<span class="status-chip ${completed?'':'new'}">${completed?'COMPLETED':'READY TO START'}</span>
       <h3>Mock ${String(i+1).padStart(2,'0')}</h3>
       <div class="sub">${esc(m.name)}</div>
@@ -576,10 +625,11 @@ function filterMocks(){
         <div><strong>200</strong><span>Marks</span></div>
         <div><strong>60 min</strong><span>4 × 15 min</span></div>
       </div>
-      ${completed?`<div class="mock-score">Attempts: <b>${attemptCount}</b> · Best: <b>${bestScore.toFixed(2)}</b></div>`:'<div class="mock-score">Fresh sectional attempt · 4 parts</div>'}
+      ${resultBlock}
       <div class="mock-actions">
         <button class="btn btn-primary" onclick="startMock(${i})">${completed?'Retake Mock':'Start Mock'}</button>
-        <button class="btn btn-outline" onclick="previewMock(${i})">Details</button>
+        ${completed?`<button class="btn btn-outline result-btn" onclick="showStoredResult(${i})">View Result</button>
+        <button class="btn btn-outline result-btn" onclick="reviewStoredAttempt(${i})">Review</button>`:`<button class="btn btn-outline" onclick="previewMock(${i})">Details</button>`}
       </div>`;
     grid.appendChild(card);
   });
@@ -603,6 +653,8 @@ function resetState(i){
 }
 function startMock(i){
   resetState(i);
+  document.getElementById('back-result-btn').classList.add('hidden');
+  document.getElementById('pause-btn').classList.remove('hidden');
   document.getElementById('portal').style.display='none';
   document.getElementById('result-page').classList.add('hidden');
   document.getElementById('exam').style.display='block';
@@ -803,15 +855,38 @@ function confirmSubmitTest(){
   let answered=Object.keys(state.answers).length;
   openModal('Submit Test','<p>You have attempted <b>'+answered+' / 100</b> questions.</p><p>The remaining sections will not be attempted after final submission.</p>','<button class="btn btn-outline" onclick="closeModal()">Continue</button><button class="btn btn-primary" onclick="closeModal();finalizeTest()">Submit Test</button>');
 }
+function getStoredAttempt(i){
+  const d=getStoredMockState(i);
+  if(!d || !d.submitted || !d.lastResult){
+    showToast('No completed result found for this mock');
+    return null;
+  }
+  return d;
+}
+function restoreAttemptIntoState(i){
+  const d=getStoredAttempt(i); if(!d) return false;
+  state={mockIndex:i,section:0,qLocal:0,remaining:0,paused:false,
+    answers:d.answers||{},marked:d.marked||{},visited:d.visited||{},submitted:true,reviewMode:false,
+    questionStartedAt:Date.now(),interval:null,qTimerInterval:null};
+  lastResult=d.lastResult||null;
+  return true;
+}
 function finalizeTest(){
-  stopTimers(); state.submitted=true; state.reviewMode=false; saveLocal(); buildResult();
+  stopTimers(); state.submitted=true; state.reviewMode=false;
+  buildResult(false);
   const prev=getStoredMockState(state.mockIndex)||{};
   const attemptCount=(Number(prev.attemptCount)||0)+1;
   const bestScore=Math.max(Number(prev.bestScore)||0,Number(lastResult?.total)||0);
   try{
-    localStorage.setItem('sscCglMockState_'+state.mockIndex,JSON.stringify({answers:state.answers,marked:state.marked,visited:state.visited,submitted:true,lastResult:lastResult,lastSavedAt:Date.now(),section:state.section,qLocal:state.qLocal,remaining:state.remaining,active:false,attemptCount,bestScore}));
+    localStorage.setItem('sscCglMockState_'+state.mockIndex,JSON.stringify({
+      answers:state.answers,marked:state.marked,visited:state.visited,submitted:true,lastResult:lastResult,
+      lastSavedAt:Date.now(),section:state.section,qLocal:state.qLocal,remaining:state.remaining,active:false,attemptCount,bestScore
+    }));
   }catch(e){}
-  document.getElementById('exam').style.display='none'; document.getElementById('result-page').classList.remove('hidden'); document.body.style.overflow='auto';
+  document.getElementById('exam').style.display='none';
+  document.getElementById('result-page').classList.remove('hidden');
+  document.getElementById('portal').style.display='none';
+  document.body.style.overflow='auto';
 }
 function calcSection(sidx){
   const s=SECTIONS[sidx], qs=currentQuestions(); let c=0,w=0,u=0,score=0;
@@ -822,29 +897,79 @@ function calcSection(sidx){
   }
   return {c,w,u,score};
 }
-function buildResult(){
+function buildResult(persist=true){
   let total=0,c=0,w=0,u=0; const rows=[];
-  SECTIONS.forEach((s,i)=>{const r=calcSection(i);total+=r.score;c+=r.c;w+=r.w;u+=r.u;rows.push(`<tr><td>PART ${s.part}</td><td style="text-align:left">${s.name}</td><td>${r.c}</td><td>${r.w}</td><td>${r.u}</td><td>${r.score.toFixed(2)}</td></tr>`)});
+  const sectionResults=[];
+  SECTIONS.forEach((s,i)=>{
+    const r=calcSection(i); sectionResults.push({part:s.part,name:s.name,...r});
+    total+=r.score;c+=r.c;w+=r.w;u+=r.u;
+    rows.push(`<tr><td>PART ${s.part}</td><td style="text-align:left">${s.name}</td><td>${r.c}</td><td>${r.w}</td><td>${r.u}</td><td>${r.score.toFixed(2)}</td></tr>`)
+  });
+  const accuracy=c+w?Math.round(c/(c+w)*100):0;
+  const previousCompleted=lastResult?.completedAt;
+  lastResult={submitted:true,total:Number(total.toFixed(2)),c,w,u,accuracy,completedAt:previousCompleted||Date.now(),sectionResults};
   document.getElementById('result-title').textContent=currentMock().name;
   document.getElementById('total-score').textContent=total.toFixed(2);
   document.getElementById('r-correct').textContent=c;document.getElementById('r-wrong').textContent=w;document.getElementById('r-unattempted').textContent=u;
-  document.getElementById('r-accuracy').textContent=(c+w?Math.round(c/(c+w)*100):0)+'%';
+  document.getElementById('r-accuracy').textContent=accuracy+'%';
   document.getElementById('result-body').innerHTML=rows.join('');
-  lastResult={submitted:true,total,c,w,u};
-  try{localStorage.setItem('sscCglMockState_'+state.mockIndex,JSON.stringify({answers:state.answers,marked:state.marked,visited:state.visited,submitted:true,lastResult}))}catch(e){}
+  document.getElementById('back-result-btn').classList.add('hidden');
+  if(persist){
+    const prev=getStoredMockState(state.mockIndex)||{};
+    try{localStorage.setItem('sscCglMockState_'+state.mockIndex,JSON.stringify({...prev,answers:state.answers,marked:state.marked,visited:state.visited,submitted:true,lastResult:lastResult,lastSavedAt:Date.now(),active:false}))}catch(e){}
+  }
 }
-function reviewResult(){
-  // Review uses the answers already held in the current test state.
-  // This avoids relying on localStorage availability in restricted browser contexts.
+function showStoredResult(i){
+  if(!restoreAttemptIntoState(i)) return;
+  document.getElementById('exam').style.display='none';
+  document.getElementById('portal').style.display='none';
+  document.getElementById('result-page').classList.remove('hidden');
+  document.body.style.overflow='auto';
+  buildResult(false);
+}
+function reviewStoredAttempt(i){
+  if(!restoreAttemptIntoState(i)) return;
+  enterReviewMode();
+}
+function enterReviewMode(){
+  stopTimers();
   state.submitted=true; state.reviewMode=true; state.section=0; state.qLocal=0; state.remaining=0; state.paused=false;
   document.getElementById('result-page').classList.add('hidden');
   document.getElementById('exam').style.display='block';
+  document.getElementById('portal').style.display='none';
   document.body.style.overflow='hidden';
   document.getElementById('exam-title').textContent=currentMock().name+' — Review';
   document.getElementById('pause-btn').classList.add('hidden');
+  document.getElementById('back-result-btn').classList.remove('hidden');
   buildPartTabs(); buildPalette(); showQuestion(0); showToast('Review mode — timing disabled');
 }
-function backToPortal(){stopTimers();document.getElementById('result-page').classList.add('hidden');document.getElementById('exam').style.display='none';document.getElementById('portal').style.display='block';document.body.style.overflow='auto';renderPortal()}
+function reviewResult(){
+  // Use the in-memory attempt when available; otherwise restore the saved attempt from the dashboard.
+  if(!currentMock() || !state.submitted){
+    const i=state.mockIndex;
+    if(!restoreAttemptIntoState(i)) return;
+  }
+  enterReviewMode();
+}
+function backToResultFromReview(){
+  stopTimers(); state.reviewMode=false; state.submitted=true;
+  document.getElementById('exam').style.display='none';
+  document.getElementById('portal').style.display='none';
+  document.getElementById('result-page').classList.remove('hidden');
+  document.body.style.overflow='auto';
+  document.getElementById('pause-btn').classList.remove('hidden');
+  buildResult(false);
+}
+function backToPortal(){
+  stopTimers();
+  document.getElementById('result-page').classList.add('hidden');
+  document.getElementById('exam').style.display='none';
+  document.getElementById('portal').style.display='block';
+  document.body.style.overflow='auto';
+  document.getElementById('back-result-btn').classList.add('hidden');
+  renderPortal();
+}
+
 function openModal(title,body,actions){
   document.getElementById('modal-title').textContent=title;document.getElementById('modal-body').innerHTML=body;document.getElementById('modal-actions').innerHTML=actions;document.getElementById('modal').classList.add('show')
 }
@@ -860,6 +985,335 @@ window.addEventListener('beforeunload',e=>{
     saveLocal(); e.preventDefault(); e.returnValue='';
   }
 });
+
+
+/* ===== SECTION ERROR REATTEMPT ENGINE ===== */
+const ERROR_SECONDS = 15 * 60;
+
+function errorIndicesForSection(mockIndex, sectionIndex, answerMap){
+  const qs=MOCKS[mockIndex].questions, s=SECTIONS[sectionIndex], src=answerMap||{};
+  const out=[];
+  for(let i=0;i<25;i++){
+    const gi=s.start+i, a=src[gi], q=qs[gi];
+    if(a!==undefined && String(a)!==String(q.answer)) out.push(gi);
+  }
+  return out;
+}
+function sectionErrorCount(mockIndex, sectionIndex){
+  const d=getStoredMockState(mockIndex);
+  if(!d || !d.submitted) return 0;
+  return errorIndicesForSection(mockIndex,sectionIndex,d.answers).length;
+}
+function getErrorAttempts(mockIndex, sectionIndex){
+  const d=getStoredMockState(mockIndex); return d?.errorAttempts?.[sectionIndex] || [];
+}
+function latestErrorAttempt(mockIndex, sectionIndex){
+  const a=getErrorAttempts(mockIndex,sectionIndex); return a.length?a[a.length-1]:null;
+}
+function decorateMockCards(){
+  document.querySelectorAll('.mock-card').forEach(card=>{
+    const m=card.querySelector('h3')?.textContent||'';
+    const match=m.match(/(\d+)/); if(!match) return;
+    const i=parseInt(match[1],10)-1; if(i<0||i>=MOCKS.length) return;
+    const existing=card.querySelector('.mock-error-quick'); if(existing) existing.remove();
+    const d=getStoredMockState(i); if(!d?.submitted) return;
+    const counts=SECTIONS.map((_,si)=>sectionErrorCount(i,si));
+    const wrap=document.createElement('div'); wrap.className='mock-error-quick';
+    let html='<div class="meq-label">ERROR REATTEMPT — WRONG ANSWERS</div><div class="meq-btns">';
+    counts.forEach((n,si)=>{
+      const letter=SECTIONS[si].part;
+      html+=`<button class="${n?'active':''}" ${n?'':'disabled'} onclick="startErrorReattempt(${i},${si})">${letter}: ${n}</button>`;
+    });
+    html+='</div>'; wrap.innerHTML=html;
+    const actions=card.querySelector('.mock-actions');
+    (actions?actions.before(wrap):card.appendChild(wrap));
+  });
+}
+
+/* Wrap the existing renderer so dashboard filters still work. */
+const __oldFilterMocks = filterMocks;
+filterMocks = function(){ __oldFilterMocks(); decorateMockCards(); };
+
+/* Make global question addressing aware of an error-only queue. */
+globalIndex = function(){
+  if(state.errorMode && Array.isArray(state.errorIndices)) return state.errorIndices[state.qLocal];
+  return SECTIONS[state.section].start + state.qLocal;
+};
+currentQ = function(){return currentQuestions()[globalIndex()];};
+
+function buildErrorTabs(){
+  const row=document.getElementById('parts-row'); row.innerHTML='';
+  const s=SECTIONS[state.section];
+  const b=document.createElement('button');
+  b.className='part-tab active';
+  b.innerHTML=`PART ${s.part}<span class="mini">ERROR RETRY</span>`;
+  b.onclick=()=>showToast('This retry is limited to '+s.name+' errors');
+  row.appendChild(b);
+}
+
+buildPartTabs = function(){
+  if(state.errorMode){ buildErrorTabs(); return; }
+  const row=document.getElementById('parts-row'); row.innerHTML='';
+  SECTIONS.forEach((s,i)=>{
+    const b=document.createElement('button');
+    b.className='part-tab'+(i===state.section?' active':'')+(i<state.section&&!state.reviewMode?' locked':'');
+    b.innerHTML=`PART ${s.part}`;
+    b.onclick=()=>{
+      if(state.reviewMode){ state.section=i; state.qLocal=0; if(state.errorMode) state.errorIndices=errorIndicesForSection(state.mockIndex,i,state.answers); buildPartTabs(); buildPalette(); showQuestion(0); return; }
+      if(i===state.section) return;
+      if(i<state.section){showToast('Previous part is locked');return;}
+      showToast('Complete the current part first');
+    };
+    row.appendChild(b);
+  });
+};
+
+function paletteCount(){return state.errorMode ? (state.errorIndices?.length||0) : 25;}
+buildPalette = function(){
+  const grid=document.getElementById('palette-grid'); grid.innerHTML='';
+  const count=paletteCount();
+  for(let i=0;i<count;i++){
+    const b=document.createElement('button'); b.className='pbox'; b.id='pbox-'+i;
+    if(state.errorMode){const gi=state.errorIndices[i]; b.textContent=(gi-SECTIONS[state.section].start)+1;}else b.textContent=i+1;
+    b.onclick=()=>jumpQuestion(i); grid.appendChild(b);
+  }
+  updatePalette();
+};
+updatePalette = function(){
+  const count=paletteCount(), s=SECTIONS[state.section];
+  let ans=0,mark=0;
+  for(let i=0;i<count;i++){
+    const b=document.getElementById('pbox-'+i); if(!b) continue;
+    const gi=state.errorMode ? state.errorIndices[i] : s.start+i;
+    const answered=state.answers[gi]!==undefined, review=!!state.marked[gi];
+    let cls='pbox';
+    if(state.reviewMode && answered){ const q=currentQuestions()[gi]; cls += String(state.answers[gi])===String(q.answer)?' answered':' wrong'; }
+    else if(answered) cls+=' answered';
+    if(review) cls+=' review';
+    if(i===state.qLocal) cls+=' current';
+    b.className=cls;
+    if(answered) ans++; if(review) mark++;
+  }
+  document.getElementById('answered-count').textContent=ans;
+  document.getElementById('unanswered-count').textContent=count-ans;
+  document.getElementById('marked-count').textContent=mark;
+  const h=document.querySelector('.palette-info h4');
+  if(h) h.textContent=state.errorMode ? 'ERROR RETRY ANALYSIS' : 'PART Analysis';
+};
+
+showQuestion = function(local){
+  const max=paletteCount()-1; if(local<0||local>max) return;
+  state.qLocal=local; state.questionStartedAt=Date.now();
+  const q=currentQ(), idx=globalIndex(); state.visited[idx]=true;
+  document.getElementById('q-number').textContent='Question: '+((idx-SECTIONS[state.section].start)+1);
+  document.getElementById('palette-part').textContent=state.errorMode ? SECTIONS[state.section].name+' — ERROR REATTEMPT' : SECTIONS[state.section].name;
+  document.getElementById('question-text').innerHTML=cleanHTML(q.question);
+  const opts=document.getElementById('options'); opts.innerHTML='';
+  if(state.errorMode && !state.reviewMode){
+    const note=document.createElement('div'); note.className='error-mode-note'; note.textContent='Targeted retry: this question was answered incorrectly in your completed mock. Retry it without affecting the original mock score.'; opts.appendChild(note);
+  }
+  for(let n=1;n<=4;n++){
+    const val=q['option_'+n]||''; if(!val) continue;
+    const isSelected=state.answers[idx]==String(n), isCorrect=String(q.answer)===String(n);
+    const row=document.createElement('div'); let extra='';
+    if(state.reviewMode && isCorrect) extra=' correct-option';
+    if(state.reviewMode && isSelected && !isCorrect) extra=' wrong-option';
+    row.className='option-row'+(isSelected?' selected':'')+extra;
+    row.innerHTML=`<div class="option-radio"><div class="radio"></div></div><div class="option-text">${cleanHTML(val)}</div>`;
+    row.onclick=()=>selectAnswer(String(n)); opts.appendChild(row);
+  }
+  if(state.reviewMode){
+    const isAnswered=state.answers[idx]!==undefined;
+    const status=isAnswered ? (String(state.answers[idx])===String(q.answer)?'Correct':'Incorrect') : 'Not Attempted';
+    const pm=parseFloat(q.positive_marks||2),nm=parseFloat(q.negative_marks||0.5);
+    const scoreText=status==='Correct'?`+${pm.toFixed(2)}`:status==='Incorrect'?`-${nm.toFixed(2)}`:'0.00';
+    const wrap=document.createElement('div'); wrap.className='review-result';
+    wrap.innerHTML=`<div><b>Result:</b> ${status} (${scoreText})</div><div><b>Correct Answer:</b> Option ${esc(q.answer)}</div><details><summary style="cursor:pointer;margin-top:8px;font-weight:700">View Solution</summary><div class="solution-box">${cleanHTML(q.solution_text||'Solution not provided in source.')}</div></details>`;
+    opts.appendChild(wrap);
+  }
+  buildPartTabs(); updatePalette(); renderTimer(); renderQuestionElapsed();
+  document.getElementById('question-pane').scrollTo({top:0,behavior:'instant'}); requestAnimationFrame(fitQuestionToViewport);
+};
+
+jumpQuestion = function(i){ if(i<0||i>=paletteCount()) return; showQuestion(i); if(window.innerWidth<=900&&!state.reviewMode)togglePalette(false); };
+
+saveAndNext = function(){
+  if(state.errorMode){
+    saveLocalErrorDraft();
+    if(state.qLocal<paletteCount()-1) showQuestion(state.qLocal+1); else finalizeErrorReattempt();
+    return;
+  }
+  if(state.reviewMode){
+    if(state.qLocal<24) showQuestion(state.qLocal+1);
+    else if(state.section<3){state.section++;state.qLocal=0;buildPartTabs();buildPalette();showQuestion(0);}
+    else showToast('End of review'); return;
+  }
+  saveLocal();
+  if(state.qLocal<24) showQuestion(state.qLocal+1); else showToast('Last question of this part — use Submit Section');
+};
+
+previousQuestion = function(){
+  if(state.qLocal>0) showQuestion(state.qLocal-1);
+  else if(state.errorMode){showToast('First error in this retry set');}
+  else if(state.reviewMode && state.section>0){state.section--;state.qLocal=24;buildPartTabs();buildPalette();showQuestion(24);}
+  else showToast('This is the first question of the part');
+};
+
+function saveLocalErrorDraft(){ /* intentionally not merged into the full-mock draft */ }
+
+submitSection = function(){
+  if(state.errorMode){
+    const answered=Object.keys(state.answers).length;
+    openModal('Finish Error Reattempt',`<p>You attempted <b>${answered} / ${paletteCount()}</b> error questions.</p><p>This targeted score is stored separately and will <b>not change</b> the original mock result.</p>`,`<button class="btn btn-outline" onclick="closeModal()">Continue</button><button class="btn btn-primary" onclick="closeModal();finalizeErrorReattempt()">Finish Retry</button>`);
+    return;
+  }
+  if(state.reviewMode){showToast('Exit review to return to test mode');return}
+  const s=SECTIONS[state.section]; let ans=0,mark=0;
+  for(let i=0;i<25;i++){const gi=s.start+i;if(state.answers[gi]!==undefined)ans++; if(state.marked[gi])mark++;}
+  openModal('Submit Part '+s.part,`<p>You have attempted <b>${ans} / 25</b> questions.</p><p><b>${25-ans}</b> are unanswered and <b>${mark}</b> are marked for review.</p><p>Submitting this part will start the next part with a fresh <b>15:00</b> timer. You will not be able to return to this part.</p>`,`<button class="btn btn-outline" onclick="closeModal()">Continue</button><button class="btn btn-primary" onclick="closeModal();finishSection()">Submit Part</button>`);
+};
+
+finishSection = function(){
+  if(state.errorMode){finalizeErrorReattempt();return;}
+  if(state.section<3){state.section++;state.qLocal=0;state.remaining=SECTION_SECONDS;state.paused=false;state.questionStartedAt=Date.now();document.getElementById('pause-btn').innerHTML='Ⅱ&nbsp; Pause';buildPalette();showQuestion(0);renderTimer();showToast('Part '+SECTIONS[state.section].part+' started — 15:00');}
+  else finalizeTest();
+};
+
+autoEndSection = function(){
+  state.remaining=0; renderTimer(); stopTimers();
+  if(state.errorMode){showToast('Time over — finishing error reattempt');setTimeout(finalizeErrorReattempt,350);return;}
+  showToast('Time over — submitting Part '+SECTIONS[state.section].part);
+  setTimeout(()=>{
+    if(state.section<3){state.section++;state.qLocal=0;state.remaining=SECTION_SECONDS;state.paused=false;buildPalette();showQuestion(0);startTimers();showToast('Next part started — 15:00');}
+    else finalizeTest();
+  },450);
+};
+
+togglePause = function(){
+  if(state.reviewMode||state.submitted)return;
+  state.paused=!state.paused;
+  document.getElementById('pause-btn').innerHTML=state.paused?'▶&nbsp; Resume':'Ⅱ&nbsp; Pause';
+  showToast(state.paused?'Retry paused':'Retry resumed');
+};
+
+confirmSubmitTest = function(){
+  if(state.errorMode||state.reviewMode||state.submitted)return;
+  const answered=Object.keys(state.answers).length;
+  openModal('Submit Test','<p>You have attempted <b>'+answered+' / 100</b> questions.</p><p>The remaining sections will not be attempted after final submission.</p>','<button class="btn btn-outline" onclick="closeModal()">Continue</button><button class="btn btn-primary" onclick="closeModal();finalizeTest()">Submit Test</button>');
+};
+
+function startErrorReattempt(mockIndex, sectionIndex){
+  const d=getStoredAttempt(mockIndex); if(!d) return;
+  const errs=errorIndicesForSection(mockIndex,sectionIndex,d.answers);
+  if(!errs.length){showToast('No wrong answers in PART '+SECTIONS[sectionIndex].part+' to reattempt');return;}
+  stopTimers();
+  state={
+    mockIndex,section:sectionIndex,qLocal:0,remaining:ERROR_SECONDS,paused:false,
+    answers:{},marked:{},visited:{},submitted:false,reviewMode:false,errorMode:true,errorIndices:errs,
+    questionStartedAt:Date.now(),interval:null,qTimerInterval:null,sourceAttemptAt:d.lastResult?.completedAt||Date.now()
+  };
+  lastResult=d.lastResult||null;
+  document.getElementById('portal').style.display='none';
+  document.getElementById('result-page').classList.add('hidden');
+  document.getElementById('exam').style.display='block';
+  document.body.style.overflow='hidden';
+  document.getElementById('exam-title').textContent=currentMock().name+' — Error Reattempt';
+  document.getElementById('pause-btn').classList.remove('hidden');
+  document.getElementById('pause-btn').innerHTML='Ⅱ&nbsp; Pause';
+  buildErrorTabs(); buildPalette(); showQuestion(0); startTimers();
+  showToast(`PART ${SECTIONS[sectionIndex].part}: ${errs.length} error questions`);
+}
+
+function calcErrorRetryResult(){
+  const qs=currentQuestions(); const idxs=state.errorIndices||[]; let c=0,w=0,u=0,total=0;
+  idxs.forEach(gi=>{const a=state.answers[gi],q=qs[gi],pm=parseFloat(q.positive_marks||2),nm=parseFloat(q.negative_marks||0.5); if(a===undefined)u++; else if(String(a)===String(q.answer)){c++;total+=pm}else{w++;total-=nm}});
+  const acc=c+w?Math.round(c/(c+w)*100):0; return {c,w,u,total:Number(total.toFixed(2)),accuracy:acc,totalQuestions:idxs.length,at:Date.now()};
+}
+function persistErrorRetry(r){
+  const i=state.mockIndex,sidx=state.section,d=getStoredMockState(i)||{};
+  const attempts=Array.isArray(d.errorAttempts)?d.errorAttempts.map(x=>Array.isArray(x)?x:[]):[[],[],[],[]];
+  while(attempts.length<4) attempts.push([]);
+  attempts[sidx].push(r); if(attempts[sidx].length>10) attempts[sidx]=attempts[sidx].slice(-10);
+  try{localStorage.setItem('sscCglMockState_'+i,JSON.stringify({...d,errorAttempts:attempts,lastErrorRetry:r,lastErrorRetryPart:sidx}))}catch(e){}
+}
+function finalizeErrorReattempt(){
+  if(!state.errorMode) return;
+  stopTimers(); const r=calcErrorRetryResult(); persistErrorRetry(r);
+  state.submitted=true; state.errorMode=false;
+  const part=SECTIONS[state.section];
+  const msg=`<div style="font-size:12px;color:#66707b;margin-bottom:7px">PART ${part.part} · ${part.name}</div><div style="font-size:30px;font-weight:800;color:#0b5ed7">${r.total.toFixed(2)}</div><div style="font-size:12px;color:#6b7280">${r.c} correct · ${r.w} wrong · ${r.u} unanswered · ${r.accuracy}% accuracy</div><p style="margin-top:10px">This error-practice score is saved separately from the full mock.</p>`;
+  openModal('Error Reattempt Result',msg,`<button class="btn btn-outline" onclick="closeModal();showStoredResult(${state.mockIndex})">Back to Mock Result</button><button class="btn btn-outline" onclick="closeModal();reviewStoredAttempt(${state.mockIndex})">Review Original</button><button class="btn btn-primary" onclick="closeModal();startErrorReattempt(${state.mockIndex},${state.section})">Retry Again</button>`);
+  document.getElementById('exam').style.display='none'; document.getElementById('result-page').classList.add('hidden');
+  document.body.style.overflow='auto'; renderPortal();
+}
+
+function renderErrorRetryPanel(){
+  const resultCard=document.querySelector('.result-card'); if(!resultCard) return;
+  let panel=document.getElementById('error-reattempt-panel'); if(!panel){
+    panel=document.createElement('section'); panel.id='error-reattempt-panel'; panel.className='error-retry-panel';
+    const table=resultCard.querySelector('.result-table'); table?.insertAdjacentElement('afterend',panel);
+  }
+  const i=state.mockIndex,d=getStoredMockState(i), qs=currentQuestions();
+  if(!d?.submitted){panel.innerHTML='';panel.style.display='none';return}
+  panel.style.display='block';
+  let html='<h3>Error Reattempt — Section-wise</h3><div class="subline">Retry only the questions you got wrong. Each retry has a fresh 15:00 practice timer and is scored separately from the original mock.</div><div class="error-retry-grid">';
+  SECTIONS.forEach((s,si)=>{
+    const errors=errorIndicesForSection(i,si,d.answers).length;
+    const last=latestErrorAttempt(i,si); const origAcc=(d.lastResult?.sectionResults?.[si]?.c||0)+(d.lastResult?.sectionResults?.[si]?.w||0)?Math.round((d.lastResult.sectionResults[si].c/((d.lastResult.sectionResults[si].c||0)+(d.lastResult.sectionResults[si].w||0)))*100):0;
+    const improvement=last?last.accuracy-origAcc:null;
+    html+=`<article class="error-retry-card"><div class="erc-head"><span class="erc-part">PART ${s.part}</span><span class="erc-errors">${errors} wrong</span></div><div class="erc-score">${last?last.total.toFixed(2):'—'}</div><div class="erc-meta">${last?`${last.c}/${last.totalQuestions} correct · ${last.accuracy}% accuracy`:'No retry yet'}${improvement!==null?` · ${improvement>=0?'+':''}${improvement}% vs original`:''}</div><div class="erc-actions"><button class="primary" ${errors?'':'disabled'} onclick="startErrorReattempt(${i},${si})">Retry Errors</button><button onclick="reviewSectionFromResult(${i},${si})">Review Part</button></div></article>`;
+  });
+  html+='</div>';panel.innerHTML=html;
+}
+
+const __oldBuildResult = buildResult;
+buildResult = function(persist=true){
+  __oldBuildResult(persist);
+  if(lastResult){
+    lastResult.errorCounts=SECTIONS.map((_,si)=>errorIndicesForSection(state.mockIndex,si,state.answers).length);
+    const d=getStoredMockState(state.mockIndex)||{};
+    if(persist){ try{localStorage.setItem('sscCglMockState_'+state.mockIndex,JSON.stringify({...d,lastResult}))}catch(e){} }
+  }
+  renderErrorRetryPanel();
+};
+
+function reviewSectionFromResult(i,si){
+  const d=getStoredAttempt(i); if(!d)return;
+  restoreAttemptIntoState(i); state.reviewMode=true; state.errorMode=false; state.submitted=true; state.section=si; state.qLocal=0;
+  enterReviewMode();
+  state.section=si;state.qLocal=0;buildPartTabs();buildPalette();showQuestion(0);
+}
+
+const __oldReviewResult = reviewResult;
+reviewResult=function(){
+  __oldReviewResult();
+};
+
+/* Improve review-mode part switching and return handling. */
+const __oldEnterReviewMode=enterReviewMode;
+enterReviewMode=function(){
+  state.errorMode=false;
+  __oldEnterReviewMode();
+};
+
+/* Store attempt-history count without changing the existing dashboard contract. */
+const __oldFinalizeTest=finalizeTest;
+finalizeTest=function(){
+  __oldFinalizeTest();
+  renderPortal();
+};
+
+/* Prevent error-retry interactions from overwriting the original full-mock draft. */
+const __oldSaveLocal = saveLocal;
+saveLocal = function(){ if(state.errorMode) return; __oldSaveLocal(); };
+
+/* Initial state fields for old sessions. */
+const __oldResetState=resetState;
+resetState=function(i){
+  __oldResetState(i);
+  state.errorMode=false; state.errorIndices=[];
+};
+
 
 // Initial render
 renderPortal();
